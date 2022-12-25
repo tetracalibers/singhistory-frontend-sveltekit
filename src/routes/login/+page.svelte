@@ -1,5 +1,17 @@
 <script>
-  import Login from '@/features/sign-in-up/login.svelte'
+  import { enhance } from '$app/forms'
+
+  /** @type {import('./$types').ActionData} */
+  export let form
 </script>
 
-<Login />
+{#if form?.missing}
+  <div>存在しないユーザーです。入力内容を確かめるか、新規ユーザー登録をお試しください。</div>
+{/if}
+<form method="POST" use:enhance>
+  <label for="singhis-username">User Name</label>
+  <input type="text" name="username" placeholder="e.g.) tomixy" id="singhis-username" />
+  <label for="singhis-password">Password</label>
+  <input type="password" name="password" id="singhis-password" />
+  <button>Login</button>
+</form>
