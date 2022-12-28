@@ -9,7 +9,7 @@ interface LoginFnArgs {
 }
 
 export const login = async ({ username, password, cookies }: LoginFnArgs) => {
-  const result = await api.post('/auth/login', { username, password })
+  const result = await api.post<{ token: string }>('/auth/login', { username, password })
   if (!result.data?.token) {
     return fail(400, { missing: true })
   }

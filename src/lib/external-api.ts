@@ -1,4 +1,6 @@
-export type RequestBody = Record<string, string | number>
+export type RequestBody = {
+  [k: string]: unknown
+}
 type ApiMethod = 'GET' | 'POST' | 'PATCH' | 'DELETE' | 'PUT'
 
 const joinUrl = (baseUrl: string, path: string) => {
@@ -10,6 +12,7 @@ const joinUrl = (baseUrl: string, path: string) => {
 const createUrlEncodedBody = (body: RequestBody) => {
   return Object.entries(body)
     .reduce((acc, [key, val]) => {
+      if (typeof val !== 'string') return acc
       return [...acc, encodeURIComponent(key) + '=' + encodeURIComponent(val)]
     }, [] as string[])
     .join('&')
