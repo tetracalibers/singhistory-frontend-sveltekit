@@ -62,7 +62,7 @@
 
   .icon {
     font-size: 7vw;
-    color: #b8c6db80;
+    color: rgba(184, 198, 219, 0.7);
     padding: 0.5rem;
     cursor: pointer;
   }
