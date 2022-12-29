@@ -1,10 +1,12 @@
 <script>
   import StarRatingInput from '@/features/rating/star-rating-input.svelte'
+  import SingKeyInput from '@/features/sing-key/sing-key-input.svelte'
 </script>
 
 <div class="app-root">
   <div class="modal-root">
     <StarRatingInput />
+    <SingKeyInput />
   </div>
 </div>
 
