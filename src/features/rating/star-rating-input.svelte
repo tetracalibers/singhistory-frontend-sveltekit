@@ -74,7 +74,7 @@
   .icon.--reset:hover,
   input:focus + .icon.--reset {
     color: #ec4899;
-    filter: drop-shadow(0px 0px 6px ivory);
+    filter: drop-shadow(0px 0px 2.5px ivory) saturate(0.7);
   }
 
   .icon.--star.colored {
