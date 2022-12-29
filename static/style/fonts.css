@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Emilys Candy';
+  src: url(../font/EmilysCandy-Regular-subset-numbers.ttf) format('truetype');
+  font-weight: 400;
+  font-stretch: normal;
+  unicode-range: U+0020-0039;
+}
