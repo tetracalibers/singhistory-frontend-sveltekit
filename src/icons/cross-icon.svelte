@@ -4,6 +4,7 @@
   height="1em"
   preserveAspectRatio="xMidYMid meet"
   viewBox="0 0 512 512"
+  aria-hidden="true"
 >
   <path
     fill="currentColor"

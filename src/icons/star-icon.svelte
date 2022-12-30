@@ -4,6 +4,7 @@
   viewBox="2 2 20 19"
   width="1em"
   height="1em"
+  aria-hidden="true"
 >
   <path
     fill="currentColor"
